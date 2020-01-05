@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: Defualt;
+    vertical-align: baseline;
+    font-size: 100%;
+    background-color: transparent;
+    color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-image: -o-linear-gradient(#0078d2CC, #0078d2CC), url("../images/hex.svg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0078d2CC), to(#0078d2CC)), url("../images/hex.svg");
+    background-image: linear-gradient(#0078d2CC, #0078d2CC), url("../images/hex.svg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+body {
+    overflow-y: auto;
+}
+
+img {
+    -webkit-filter: drop-shadow(0px 0px 1px #444);
+    filter: drop-shadow(0px 0px 1px #444);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Top Bar Style */
+
+.topBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 64px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*
+*
+*   Download Button Style
+*   Start
+*/
+
+.DoubleDownBtn {
+    width: 100%;
+}
+
+.DoubleDownBtn>* {
+    margin: 5px 0;
+}
+
+.OsType {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+.OsIcon {
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 3vw;
+    height: 10vh;
+}
+
+.OsName {
+    font-size: 2vw;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+a.bttn {
+    color: white;
+    text-decoration: none;
+    direction: rtl;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+a.bttn:hover {
+    border: 3px solid #800080;
+}
+
+a.bttn:focus {
+    border: 3px solid #800080;
+}
+
+.bttn {
+    display: inline-block;
+    text-align: center;
+    width: 15vw;
+    font-weight: bold;
+    padding: 14px 0px;
+    border: 3px solid white;
+    border-radius: 2px;
+    position: relative;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.bttn:before {
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #800080;
+    z-index: -1;
+}
+
+.bttn:hover:before {
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.bttn:focus:before {
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+/**
+*
+*   Download Button Style
+*   End
+*/
+
+.topBarBtn {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    height: 100%;
+    min-width: 64px;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#app-name {
+    margin-bottom: 3vh;
+}
+
+.aboutapp {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.imgs {
+    width: auto;
+    height: 10vw;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.about {
+    width: 90%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.about>p {
+    height: auto;
+    font-size: 3vw;
+}
+
+#TOSVIEW {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    direction: rtl;
+    margin-bottom: 40px;
+    font-size: 5vh;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.view-download {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#app-ex {
+    height: 25vw;
+}
+
+#app-ex1 {
+    height: 35vw;
+}
+
+#app-feature {
+    direction: rtl;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    .section {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .aboutapp {
+        width: 100%;
+    }
+    .about>p {
+        font-size: 5vw;
+    }
+    .topBarBtn {
+        min-width: 32px;
+        font-size: 3vw;
+    }
+    #app-name {
+        margin: 5vh 0;
+    }
+    .imgs {
+        height: 20vw;
+    }
+    .view-download {
+        width: 100%;
+        margin: 5vh 0 0;
+    }
+    .OsName {
+        font-size: 5vw;
+    }
+    .bttn {
+        width: 23vw;
+    }
+    a.bttn {
+        font-size: 4vw;
+    }
+    #app-ex1 {
+        height: 70vw;
+        margin-bottom: 5vh;
+    }
+    #app-feature {
+        direction: rtl;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        font-size: 5vw;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: auto;
+        margin: 5vh 0;
+    }
+}
