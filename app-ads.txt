@@ -17,6 +17,6 @@ velismedia.com, 725, RESELLER
 appnexus.com, 7353, RESELLER
 xandr.com, 7353, RESELLER
 algorix.co, 54616, RESELLER
+google.com, pub-5595541207352854, RESELLER
 telaria.com, rwd19-1858479, RESELLER, 1a4e959a1b50034a
 tremorhub.com, rwd19-1858479, RESELLER, 1a4e959a1b50034a
-rubiconproject.com, 13626, RESELLER, 0bfd66d529a55807
