@@ -1,0 +1,27 @@
+.background {
+  background: url("cast_bg.png");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+}
+
+.logo {
+  background-image: url("cast_logo.png");
+  background-size: 128px 128px;
+  background-position: center; 
+}
+
+.progressBar {
+  background-color: #0078d2;
+}
+
+.splash {
+  background-image: url("cast_splash.png");
+  background-size: 512px 512px;
+  background-position: center; 
+}
+
+.watermark {
+  background-image: url("cast_logo.png");
+  background-size: 57px 57px;
+}
