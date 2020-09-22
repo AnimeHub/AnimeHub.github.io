@@ -7,7 +7,7 @@
 
 .logo {
   background-image: url("cast_logo.png");
-  background-size: 256px 256px;
+  background-size: 512px 512px;
   background-position: center; 
 }
 
@@ -22,6 +22,6 @@
 }
 
 .watermark {
-  background-image: url("cast_logo.png");
+  background-image: url("cast_watermark.png");
   background-size: 57px 57px;
 }
